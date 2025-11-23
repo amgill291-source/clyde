@@ -1,0 +1,35 @@
+/*Mobile First photo grid */
+#row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 12px;
+	vertical-align: middle;
+}
+/* full width on mobile */
+.column {
+	margin-top: 0;
+	max-width: 100%;
+	vertical-align: middle;
+}
+ /* make images responsive */
+.column img {
+	padding-bottom: 10px;
+	width: 100%;
+}
+/* For desktops */
+@media only screen and (min-width: 768px) {
+	.column {
+		max-width: 50%;
+		padding: 0 6px;
+	}
+
+	#row {
+	padding: 0 6px;
+	}
+}
+ /* Large screens: 4 columns */ 
+@media only screen and (min-width: 1200px) {
+	.column {
+		max-width: 25%;
+	}
+}

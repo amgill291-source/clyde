@@ -1,0 +1,87 @@
+/* Mobile first styles only */
+
+h2 {
+	display: none;
+}
+/* Style the sidebar (aside) */
+aside {
+	background: #E3DFDE;
+	font-size: 90%;
+	padding: 5px 0;
+	text-align:center;
+	width: 100%;
+}
+/* Style the links inside the sidebar */
+aside a 
+{
+	color:#AE6143;
+	display: block;
+	padding: 5px 0;
+	text-decoration:none;
+	text-align:center;
+	width: 100%;
+}
+/* Hover effect for sidebar links */
+aside a:hover
+{
+	background-color:#242522 ;
+	color: white;
+}
+/* keyboard navigation */
+aside a:focus
+{
+  background-color:#AE6143 ;
+  color: #E3DFDE;
+  outline: none;
+}
+/* Style the main content area (article) */
+article {
+	background-color: #E3DFDE;
+	color:#AE6143 ;
+	font-size: 115%;
+	padding: 0 10px;
+}
+/* Style links inside articles */
+article a {
+	color: #4B3C35;
+	padding: 5px;
+	text-decoration: none;
+}
+/* Hover effect for article links */
+article a:hover {
+  background-color: #E3DFDE;
+  color: #4B3C35;
+}
+/*Focus effect for article links */
+article a:focus 
+{
+  background-color: white;
+  color:#AE6143 ;
+  outline: none;
+}
+/* Desktop Styles */
+#main_image {
+	width: 100%;
+}
+@media only screen and (min-width: 768px) {
+main 
+{
+		display: flex;
+}
+    aside 
+        {
+		align-items:center;
+		display: flex;
+		flex-direction: column;
+		float: left;
+		justify-content:center;
+		width: 30%;
+        }
+
+	section 
+	{
+		display: inline;
+		float: right;
+		width: 70%;
+	}
+}
